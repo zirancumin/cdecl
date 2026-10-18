@@ -1,0 +1,18 @@
+EXPECTED_EXIT=0
+cdecl -bEL$LINENO -xc++ <<END
+
+explain C::operator int()
+explain friend C::operator int()
+
+class C
+
+explain C::operator int()
+explain friend C::operator int()
+
+explain operator C const&()
+
+explain operator int()
+explain operator int() const override
+END
+
+# vim:set syntax=sh et sw=2 ts=2:
