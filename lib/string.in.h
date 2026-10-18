@@ -261,6 +261,7 @@ _GL_EXTERN_C int strncmp (const char *__s1, const char *__s2, size_t __n)
   _GL_ATTRIBUTE_NONNULL_IF_NONZERO (1, 3)
   _GL_ATTRIBUTE_NONNULL_IF_NONZERO (2, 3);
 # ifndef __cplusplus
+# undef memchr
 _GL_EXTERN_C void *memchr (const void *__s, int __c, size_t __n)
   _GL_ATTRIBUTE_NONNULL_IF_NONZERO (1, 3);
 _GL_EXTERN_C void *memrchr (const void *__s, int __c, size_t __n)
